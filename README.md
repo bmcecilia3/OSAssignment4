@@ -29,37 +29,21 @@ Using C++, create a memory management unit simulator that will implement dynamic
 Your simulator should continually ask the user to input a command. Your program should interpret the following statements:
 
 - create <text_size> <data_size>
-
     - Initializes a new process
-    
     - Prints the PID
-    
 - allocate <PID> <var_name> <data_type> <number_of_elements>
- 
     - Allocated memory on the heap (how much depends on the data type and the number of elements)
-    
     - Print the virtual memory address
-    
 - set <PID> <var_name> <offset> <value_0> <value_1> <value_2> ... <value_N>
- 
     - Set the value for variable <var_name> starting at <offset>
- 
     - Multiple contiguous values can be set with one command
-    
 - free <PID> <var_name>
- 
     - Deallocate memory on the heap that is associated with <var_name>
-    
 - terminate <PID>
- 
     - Kill the specified process
-    
 - print <object>
- 
     - If <object> is "mmu", print the MMU memory table
- 
     - If <object> is "page", print the page table (do not need to print anything for free frames)
- 
     - If <object> is "processes", print a list of PIDs for processes that are still running
  
     - If <object> is a "<PID>:<var_name>", print the value of the variable for that process
