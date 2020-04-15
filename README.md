@@ -45,9 +45,7 @@ Your simulator should continually ask the user to input a command. Your program 
     - If <object> is "mmu", print the MMU memory table
     - If <object> is "page", print the page table (do not need to print anything for free frames)
     - If <object> is "processes", print a list of PIDs for processes that are still running
- 
-    - If <object> is a "<PID>:<var_name>", print the value of the variable for that process
- 
-         - If variable has more than 4 elements, just print the first 4 followed by "... [N items]" (where N is the number of elements)
+    - If <object> is a "<PID> : <var_name>", print the value of the variable for that process
+    - If variable has more than 4 elements, just print the first 4 followed by "... [N items]" (where N is the number of elements)
 - exit
     - quit program
